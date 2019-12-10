@@ -1,0 +1,49 @@
+<!DOCTYPE html><!-- 宣告文件類型 -->
+<html lang="zh-tw">
+<head><!-- 指定網頁使用的語言 -->
+	<meta charset="utf-8">
+	<title>test01</title>
+
+
+
+</head>
+
+<body  bgcolor=#d1fce8><!-- 文件主體 -->
+
+ <marquee behavior="alternate" scrollamount="15" align="middle" ><img src="images/profile1.jpg" alt="the public rock"   id="img1" ></marquee>
+
+<form action ="LINK.php" method="post">
+   <fieldset>
+     <legend>個人資訊</legend>
+	 姓名: <input type="text"  required autocomplete ="on"><br>
+	 <font  >性別</font>
+	 <input type ="radio" name="usergender" id="usergender" value="gender1"  required autocomplete ="on">男性
+	 <input type="radio" name="usergender" id="usergender" value="gender2" required autocomplete ="on">女性<br>
+	  <font  >最高學歷</font>
+	  <select name="userschool" required autocomplete ="on">
+	    <option value="高中以下">高中以下</option>
+		<option value="大專院校">大專院校</option>
+		<option value="碩士">碩士</option>
+		<option value="博士">博士</option>
+	 </select><br>
+   </fieldset><br>
+   <fieldset>
+   <legend>其他資訊</legend>
+   <font  required autocomplete ="on">你喜歡下列哪些活動(可複選)</font><br>
+   <input type ="checkbox" name="activity[]" id="activity[]" value="閱讀">閱讀<!--複選 -->
+	 <input type ="checkbox" name="activity[]" id="activity[]" value="打球">打球
+	 <input type ="checkbox" name="activity[]" id="activity[]" value="逛街" checked>逛街
+	 <input type ="checkbox" name="activity[]" id="activity[]" value="聽音樂">聽音樂
+	 <input type ="checkbox" name="activity[]" id="activity[]" value="水上運動">水上運動<br>
+	 <input type ="checkbox" name="activity[]" id="activity[]" value="旅行">旅行<br>
+	 <font >您對於使用臉書經營社群有何看法</font><br>
+	 <textarea name="usertrouble" id ="usertrouble" cols="45" rows ="4"></textarea><br>
+</fieldset><br>
+<input type ="hidden" name="autho" value="bill">
+	 <input type="submit" value="送出">
+	 <input type="restart" value="重新輸入">
+</form>
+<pre>
+<img src="images/img-7d1ef8f4gy1fgxpe7lpdsg20dc07ib2e.gif" alt="the public rock" width="330px" height="171px">  <img src="images/img-005AxG74gy1ffffnz0fxng30a0073x6p.gif" alt="the public rock" width="330px" height="171px">  <img src="images/img-70f86863gy1fgb8xv49mig209t03yaog.gif" alt="the public rock" width="330px" height="171px">
+</html>
+

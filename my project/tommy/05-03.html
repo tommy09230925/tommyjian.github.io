@@ -1,0 +1,90 @@
+<!DOCTYPE html><!-- 宣告文件類型 -->
+<html lang="zh-tw">
+<head><!-- 指定網頁使用的語言 -->
+	<meta charset="utf-8">
+	<title>test01</title>
+</head>
+
+<body style="color:#000000;background-image:url(images/cedar-tea_by_Mette-Nielsen-LEDE.jpg)"><!-- 文件主體 -->
+<font size="7" color =#000000><marquee behavior="alternate">MY WEBSITE !!!</marquee></font>
+ <form action ="" method="post">
+     <font size="4"><b> *姓&nbsp;名:</b></font><input type ="text" name="username" id="username" size="40" required autocomplete ="off"><br><!-- 填表格 -->
+	 <font size="4"><b>*公&nbsp;司:</b></font><input type ="text" name="userjob" id="userjob" size="40" required autocomplete ="on"><br>
+	  <font size="4"><b>*Email:</b></font><input type ="text" name="usermail" id="usermail" size="40" required autocomplete ="on"><br>
+	 <input type ="radio" name="userage" id="userage" value="ag1">未滿20滿歲<!--單選 -->
+	 <input type ="radio" name="userage" id="userage" value="ag2">20~29
+	 <input type ="radio" name="userage" id="userage" value="ag3" checked>30~39
+	 <input type ="radio" name="userage" id="userage" value="ag4">40~49
+	 <input type ="radio" name="userage" id="userage" value="ag5">50以上<br>
+	 <font size="4"><b>曾經使用過那些手機</b></font><br>
+	 <input type ="checkbox" name="userphone[]" id="userphone[]" value="htc">htc<!--單選 -->
+	 <input type ="checkbox" name="userphone[]" id="userphone[]" value="samsung">samsung
+	 <input type ="checkbox" name="userphone[]" id="userphone[]" value="sony" checked>sony
+	 <input type ="checkbox" name="userphone[]" id="userphone[]" value="huawei">huawei
+	 <input type ="checkbox" name="userphone[]" id="userphone[]" value="oppo">oppo<br>
+	 <font size="4"><b>手機最常出現的問題</b></font><br>
+	 <textarea name="usertrouble" id ="usertrouble" cols="45" rows ="4">連線問題</textarea><br>
+	 <font size="4"><b>使用過那些業者門號</b></font>
+	 <select name="usernumber[]">
+	    <option value="中華電信">中華電信</option>
+		<option value="亞太">亞太</option>
+		<option value="台灣大哥大">台灣大哥大</option>
+		<option value="垃圾門號">垃圾門號</option>
+	 </select><br>
+	 <font size="4"><b>請輸入密碼</b></font><<br>
+	 <input type ="password" name="passwd" id ="passwd" pattern="[A-Z][a-z][A-Z][a-z]" title="只接受第一第二第三第四位分別為大寫小寫大寫小寫英文字母"size ="10"><br>
+	 <font size="4"><b>請輸入身分證號碼</b></font><<br>
+	 <input type ="password" name="passwd" id ="passwd" pattern="[A-Z]d{9}" title="第一位為大寫字母,剩下9位為數字"size ="10"><br>
+	 <font size="4"><b>請輸入電話號碼</b></font><<br>
+	 <input type ="password" name="passwd" id ="passwd" pattern="[0][9][1-8][0-9]([\-]|[\s]?)[0-9]{3}\1[0-9]{3}" title="09xx xxx xxx"size ="10"><br>
+	 <input type ="hidden" name="autho" value="bill">
+	 <input type="submit" value="送出">
+	 <input type="restart" value="重新輸入">
+ </form>
+ <hr color="green" size="7">
+<p>
+The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, <br>
+opposite the Kjerag plateau, in Forsand, Ryfylke, Norway. The top of the cliff is<br> 
+approximately 25 by 25 metres (82 by 82 feet) square and almost flat,<br>
+and is a famous tourist attraction in Norway.<br>
+</p>
+<figure>
+<img src="images/jp2.jpg" alt="the public rock" width="304px" height="228px">
+<figcaption>Fig.1 - The Pulpit Rock, Norway.</figcaption> 
+</figure>
+<pre>
+     <img src="images/img-7d1ef8f4gy1fgxpe7lpdsg20dc07ib2e.gif" alt="the public rock" width="304px" height="228px"> 
+	                   <table border="1" ><!-- 表格 -->
+	    <tr>
+		  <th rowspan="2">&nbsp;</th>
+		  <th colspan="2">101年</th>
+		  <th colspan="2">102年</th>
+		</tr>
+		<tr> <!-- 表格列 -->  
+			
+			<th>營收（百萬）</th> 
+			<th>純益（百萬）</th>
+			<th>營收（百萬）</th> 
+			<th>純益（百萬）</th>
+		</tr> 
+      
+		<tr> <!-- 表格列 -->
+			<td>中興</td><!-- 表格行 -->
+			<td>3953</td>
+			<td>1245</td>
+			<td>3687</td>
+			<td>763</td>
+		</tr> 
+      
+		<tr> 
+			<td>飛瑞</td>
+			<td>5193</td>
+			<td>1420</td>
+			<td>4143</td>
+			<td>932</td>
+		</tr> 
+                 </table>
+</pre> 
+</body>
+</html>
+

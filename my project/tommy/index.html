@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 行動裝置支援 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>網站後台儀表板</title>
+
+    <link rel="stylesheet" href="../library/css/bootstrap.css">
+    <script src="../library/js/jquery-2.2.4.js"></script>
+    <script src="../library/js/bootstrap.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="sidebar.css" rel="stylesheet">
+    
+
+
+
+    <style>
+    .glyphicon {
+        margin-left: -20px;
+        top: 2px;
+        margin-right:5px;
+    }
+    .page-header {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .breadcrumb{
+        margin: 0;
+    }
+    .table{
+        margin-bottom: 0;
+    }
+    #container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto
+}
+
+    </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        網站後台儀表板
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-home"></span>主控台</a>
+                </li>
+                <li>
+                    <a href="login.php"><span class="glyphicon glyphicon-user"></span>使用者管理</a>
+                </li>
+                <li>
+                    <a href="05-03.html"><span class="glyphicon glyphicon-edit"></span>文章管理</a>
+                </li>
+                <li>
+                    <a href="msg.php"><span class="glyphicon glyphicon-comment"></span>留言管理</a>
+                </li>
+                <li>
+                    <a href="simple2.php"><span class="glyphicon glyphicon-option-horizontal"></span>政府資訊</a>
+                </li>
+                <li>
+                    <a href="myhomework.html"><span class="glyphicon glyphicon-question-sign"></span>問卷調查</a>
+                </li>
+                <li>
+                    <a href="data.php"><span class="glyphicon glyphicon-cloud"></span>資料庫</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-log-out"></span>登出</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- 頁面內容 -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Library</a></li>
+                          <li class="active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header">
+                          <h2><small>最近登入紀錄</small></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-pencil"></span></th>
+                                    <th>登入帳號</th>
+                                    <th>瀏覽器</th>
+                                    <th>IP address</th>
+                                    <th>時間</th>
+                                    <th>Opr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><font size="3">001</font></td>
+                                <td><font size="3">user</font></td>
+                                <td><font size="3">chrome</font></td>
+                                <td><font size="3">192.168.63.15</font></td>
+                                <td><font size="3">2019/12/11</font></td>
+                                <th><button class="btn btn-danger btn-xsm">標示可疑</button></th>
+                                </tr>
+                                <tr>
+                                <td><font size="3">002</font></td>
+                                <td><font size="3">user</font></td>
+                                <td><font size="3">chrome</font></td>
+                                <td><font size="3">192.168.63.17</font></td>
+                                <td><font size="3">2019/12/10</font></td>
+                                <th><button class="btn btn-danger btn-xsm">標示可疑</button></th>
+                                </tr>
+                                <tr>
+                                <td><font size="3">003</font></td>
+                                <td><font size="3">user</font></td>
+                                <td><font size="3">chrome</font></td>
+                                <td><font size="3">192.168.63.14</font></td>
+                                <td><font size="3">2019/12/09</font></td>
+                                <th><button class="btn btn-danger btn-xsm">標示可疑</button></th>
+                                </tr>
+                                <tr>
+                                <td><font size="3">004</font></td>
+                                <td><font size="3">user</font></td>
+                                <td><font size="3">chrome</font></td>
+                                <td><font size="3">192.168.63.85</font></td>
+                                <td><font size="3">2019/12/008</font></td>
+                                <th><button class="btn btn-danger btn-xsm">標示可疑</button></th>
+                                </tr>
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-12">
+                <div class="page-header">
+                          <h2><small>最近一周訪客數量</small></h2>
+                </div>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               <div id="container"></div> 
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+ </div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    // $("#menu-toggle").click(function(e) {
+    //     e.preventDefault();
+    //     $("#wrapper").toggleClass("toggled");
+    // });
+    Highcharts.chart('container', {
+
+    title: {
+        text: '最近七天訪客流量, 2019'
+    },
+
+    subtitle: {
+        text: '網站後台儀表板'
+    },
+
+    xAxis:{
+      categories:['Sun','Mon','Wed','Tue','Thr','Fri','Sat']
+    },
+
+    yAxis: {
+        title: {
+            text: '網頁流量'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    tooltip:{
+     valueSuffix:'次'
+    },
+
+    // plotOptions: {
+    //     series: {
+    //         label: {
+    //             connectorAllowed: false
+    //         },
+    //         pointStart: 2010
+    //     }
+    // },
+
+    series: [{
+        name: 'Page View',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133]
+    }, {
+        name: '不重複瀏覽訪客',
+        data: [5450, 5440, 1360, 5280, 2980, 1005,1030]
+    }, 
+    ],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+    </script>
+
+</body>
+
+</html>
